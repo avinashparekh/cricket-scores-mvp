@@ -1,0 +1,189 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.matches = void 0;
+/**
+ * Match list fixtures.
+ * LIVE / COMPLETED ids also have entries in scorecards + commentaries.
+ * UPCOMING ids intentionally omit those maps (API returns 404).
+ */
+exports.matches = [
+    // --- LIVE ---
+    {
+        id: 'm1',
+        teamA: {
+            name: 'India',
+            shortName: 'IND',
+            runs: 186,
+            wickets: 4,
+            overs: 17.2,
+        },
+        teamB: {
+            name: 'Australia',
+            shortName: 'AUS',
+            runs: 178,
+            wickets: 10,
+            overs: 19.4,
+        },
+        status: 'LIVE',
+        venue: 'Wankhede Stadium, Mumbai',
+        startTime: '2026-07-24T14:00:00.000Z',
+        summary: 'India won by 6 wickets',
+        format: 'T20I',
+    },
+    {
+        id: 'm2',
+        teamA: {
+            name: 'England',
+            shortName: 'ENG',
+            runs: 245,
+            wickets: 6,
+            overs: 50,
+        },
+        teamB: {
+            name: 'South Africa',
+            shortName: 'SA',
+            runs: 198,
+            wickets: 7,
+            overs: 42.3,
+        },
+        status: 'LIVE',
+        venue: "Lord's, London",
+        startTime: '2026-07-24T09:30:00.000Z',
+        summary: 'South Africa need 47 runs from 45 balls',
+        format: 'ODI',
+    },
+    // --- UPCOMING (no scorecard / commentary) ---
+    {
+        id: 'm3',
+        teamA: {
+            name: 'Pakistan',
+            shortName: 'PAK',
+            runs: null,
+            wickets: null,
+            overs: null,
+        },
+        teamB: {
+            name: 'New Zealand',
+            shortName: 'NZ',
+            runs: null,
+            wickets: null,
+            overs: null,
+        },
+        status: 'UPCOMING',
+        venue: 'Gaddafi Stadium, Lahore',
+        startTime: '2026-07-25T15:00:00.000Z',
+        summary: 'Match starts tomorrow',
+        format: 'T20I',
+    },
+    {
+        id: 'm4',
+        teamA: {
+            name: 'Sri Lanka',
+            shortName: 'SL',
+            runs: null,
+            wickets: null,
+            overs: null,
+        },
+        teamB: {
+            name: 'Bangladesh',
+            shortName: 'BAN',
+            runs: null,
+            wickets: null,
+            overs: null,
+        },
+        status: 'UPCOMING',
+        venue: 'R. Premadasa Stadium, Colombo',
+        startTime: '2026-07-26T10:00:00.000Z',
+        summary: 'First ODI of the series',
+        format: 'ODI',
+    },
+    // --- COMPLETED ---
+    {
+        id: 'm5',
+        teamA: {
+            name: 'West Indies',
+            shortName: 'WI',
+            runs: 312,
+            wickets: 8,
+            overs: 50,
+        },
+        teamB: {
+            name: 'Afghanistan',
+            shortName: 'AFG',
+            runs: 278,
+            wickets: 10,
+            overs: 48.2,
+        },
+        status: 'COMPLETED',
+        venue: 'Kensington Oval, Barbados',
+        startTime: '2026-07-22T14:00:00.000Z',
+        summary: 'West Indies won by 34 runs',
+        format: 'ODI',
+    },
+    {
+        id: 'm6',
+        teamA: {
+            name: 'India',
+            shortName: 'IND',
+            runs: 156,
+            wickets: 10,
+            overs: 19.1,
+        },
+        teamB: {
+            name: 'England',
+            shortName: 'ENG',
+            runs: 160,
+            wickets: 4,
+            overs: 18.3,
+        },
+        status: 'COMPLETED',
+        venue: 'Eden Gardens, Kolkata',
+        startTime: '2026-07-21T13:30:00.000Z',
+        summary: 'England won by 6 wickets',
+        format: 'T20I',
+    },
+    {
+        id: 'm7',
+        teamA: {
+            name: 'Australia',
+            shortName: 'AUS',
+            runs: null,
+            wickets: null,
+            overs: null,
+        },
+        teamB: {
+            name: 'South Africa',
+            shortName: 'SA',
+            runs: null,
+            wickets: null,
+            overs: null,
+        },
+        status: 'UPCOMING',
+        venue: 'MCG, Melbourne',
+        startTime: '2026-07-28T04:00:00.000Z',
+        summary: 'Day-night Test, Day 1',
+        format: 'Test',
+    },
+    {
+        id: 'm8',
+        teamA: {
+            name: 'New Zealand',
+            shortName: 'NZ',
+            runs: 189,
+            wickets: 5,
+            overs: 20,
+        },
+        teamB: {
+            name: 'Pakistan',
+            shortName: 'PAK',
+            runs: 172,
+            wickets: 10,
+            overs: 19.2,
+        },
+        status: 'COMPLETED',
+        venue: 'Sky Stadium, Wellington',
+        startTime: '2026-07-20T06:00:00.000Z',
+        summary: 'New Zealand won by 17 runs',
+        format: 'T20I',
+    },
+];
