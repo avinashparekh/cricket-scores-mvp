@@ -1,0 +1,20 @@
+/** App color tokens — keep UI consistent without hardcoding hex in screens. */
+export const colors = {
+  background: '#F4F7F5',
+  surface: '#FFFFFF',
+  white: '#FFFFFF',
+  border: '#D8E0DA',
+  text: '#132018',
+  textMuted: '#5F6F64',
+  primary: '#0B6E4F',
+  primarySoft: '#D8F0E6',
+  live: '#C62828',
+  liveSoft: '#FDECEA',
+  upcoming: '#1565C0',
+  upcomingSoft: '#E3F2FD',
+  completed: '#455A64',
+  completedSoft: '#ECEFF1',
+  wicket: '#B71C1C',
+  boundary: '#1B5E20',
+  danger: '#B00020',
+};
